@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Open Canvas for ETER project</title>
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Zilla+Slab');
+
+      :root {
+        --content: rgb(0,0,0,0.7);
+        --title: rgb(0,0,0,0.9);
+        --background: rgb(0,0,0,0.1);
+      }
+
+      body {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 16px;
+        /* color: var(--content); */
+      }
+      header h1 {
+        font-family: 'Zilla Slab', serif;
+        color: var(--title);
+      }
+      .container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: auto;
+      }
+      .container section {
+        border: 1px solid #eaeaea;
+        padding: 5px;
+      }
+      .container section header {
+        font-size: 1.1em;
+      }
+      ul li {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+        line-height: 1.2em;
+        color: var(--content);
+      }
+      .item1 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      .item3 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+      .item4 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .item5 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 6;
+      }
+      .item6 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 5;
+      }
+      .item7 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 5;
+        grid-column-end: 6;
+      }
+      .item8 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 5;
+      }
+      .item9 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 5;
+        grid-column-end: 6;
+      }
+      .grid_footer {
+        width: 90%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        font-family: 'Zilla Slab', serif;
+        font-size: 1.2em;
+      }
+      footer {
+        margin-top: 50px;
+        background-color: var(--background);
+        color: var(--content);
+        font-size: 0.8em;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Open Canvas - ETER</h1>
+    </header>
+    <div class="container">
+      <section class="item1">
+        <header>Problem</header>
+        <ul>
+          <li>Teachers interact with technology only as consumers of black box devices/services</li>
+          <li>Education contents are not linked to the students' reality</li>
+          <li>There is no descentralized environmental data available</li>
+        </ul>
+      </section>
+      <section class="item2">
+        <header>Solution</header>
+        <ul>
+          <li>A game for teachers to learn about the potential and benefits of open source practices for education, in a playful way</li>
+          <li>A hackable handbook that contains a methodology to build projects linking open source and local community problems</li>
+          <li>A website showing the data from the projects + a physical dashboard next to the device also showing data </li>
+        </ul>
+      </section>
+      <section class="item3">
+        <header>Key Metrics</header>
+        <ul>
+          <li>How many users play the game and how far (levels) they get</li>
+          <li>Number of downloads and collaborations/hacks of the handbook</li>
+          <li>Data views and reutilisation</li>
+        </ul>
+      </section>
+      <section class="item4">
+        <header>Resources Required (*= available within project)</header>
+        <ul>
+          <li>A website to host the game</li>
+          <li>The game idea & design</li>
+          <li>Expertise: gammification</li>
+          <li>A website to host the handbook, collaborative style + forum</li>
+          <li>The handbook design & contents</li>
+          <li>Expertise: web development*</li>
+          <li>Expertise: education*</li>
+          <li>People interested in education & community science</li>
+          <li>A case as an example: Air quality monitor*</li>
+          <li>Expertise: IoT*</li>
+          <li>Expertise: Environmental data and how to read it*</li>
+        </ul>
+      </section>
+      <section class="item5">
+        <header>Unique Value Proposition</header>
+        <ul>
+          <li>A hackable open source methodology to design low-cost educational community science projects</li>
+          #OpenMethodology
+          #SituatedHacking
+          #BlendedLearning
+          #CommunityEmpowerment
+        </ul>
+      </section>
+      <section class="item6">
+        <header>User Profiles</header>
+        <ul>
+          <li>School teachers</li>
+          <li>Game players: activists, researchers, students</li>
+          <li>Interested in data: NGOs, Neighbours, Gov, Universities</li>
+        </ul>
+      </section>
+      <section class="item7">
+        <header>User Channels</header>
+        <ul>
+          <li>Local meetings and workshops</li>
+          <li>Webinars or similar</li>
+          <li>Press and institutional communication</li>
+          <li>Social Media</li>
+        </ul>
+      </section>
+      <section class="item8">
+        <header>Contributor Profiles</header>
+        <ul>
+          <li>Gammification experts</li>
+          <li>Developers</li>
+          <li>Makers</li>
+          <li>Education experts</li>
+        </ul>
+      </section>
+      <section class="item9">
+        <header>Contributor Channels</header>
+        <ul>
+          <li>GitHub</li>
+          <li>Forum with discussion</li>
+          <li>Event participation</li>
+        </ul>
+      </section>
+    </div>
+      <div class="grid_footer">
+        <div class="left">Product</div>
+        <div class="right">Community</div>
+      </div>
+      <footer>
+        <p>Design by <a href="https://github.com/deimidis">Guillermo Movia</a>, adapted from the <a href="https://leanstack.com/lean-canvas/">Lean Canvas</a> - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>.</p>
+      </footer>
+  </body>
+</html>
